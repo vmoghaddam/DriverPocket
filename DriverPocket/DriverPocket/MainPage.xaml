@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DriverPocket.MainPage">
+
+    <NavigationPage.TitleView>
+        <Label x:Name="menuBtn" Text="&#xf0c9;"
+       FontFamily="{StaticResource FontAwesomeSolid}" TextColor="White" FontSize="Large" />
+    </NavigationPage.TitleView>
+    <StackLayout>
+        <Label FontAttributes="Bold" Text="Retrieve the device's current geolocation coordinates in Xamarin Forms application using Xamarin Essentials for Android and UWP" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Label FontAttributes="Bold" x:Name="lblLong" Text="Longitude :" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Label FontAttributes="Bold" x:Name="lblLat" Text="Latitude :" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Label FontAttributes="Bold" x:Name="lblAlt" Text="Altitude :" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Button x:Name="btnclick" Text="Retrive Coordinates" Clicked="btn_clicked"/>
+    </StackLayout>
+
+</ContentPage>
